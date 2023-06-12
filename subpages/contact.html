@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>SearchOnce</title>
+  <link rel="icon" type="image/x-icon" href="./assets/img/favicon.png">
+  <link href="../style/styles.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootswatch@5.2.3/dist/flatly/bootstrap.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+   <!--Navigation bar-->
+   <div id="nav-placeholder"></div>
+   <script>
+     $(function(){
+       $("#nav-placeholder").load("../nav.html");
+     });
+   </script>
+   <!--end of Navigation bar-->
+   <div class="underNav">
+    <h3 id="contact">If you have any questions, please contact us:</h3>
+    <br>
+    <div class="table-responsive">
+      <table class="table table-hover mx-auto">
+          <thead>
+              <tr>
+              <th scope="col"><i class="fas fa-user"></i> Name</th>
+              <th scope="col"><i class="fas fa-envelope"></i> E-mail</th>
+              <th scope="col"><i class="fab fa-github-alt"></i> Github</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr class="table-active">
+              <th scope="row">Irena</th>
+              <td><a href="mailto: irenajerzemowska21@gmail.com" class="e-mail">irenajerzemowska21@gmail.com</a></td>
+              <td><a href="https://github.com/IrenaJerzemowska" class="github">https://github.com/IrenaJerzemowska</td>
+              </tr>
+              <tr class="table-light">
+              <th scope="row">Joanna</th>
+              <td><a href="mailto: joanna02nowak@gmail.com" class="e-mail">joanna02nowak@gmail.com</a></td>
+              <td><a href="https://github.com/nowak-j" class="github">https://github.com/nowak-j</td>
+              </tr>
+              <tr class="table-primary">
+              <th scope="row">Karol</th>
+              <td><a href="mailto: ka.sadurski@gmail.com" class="e-mail">ka.sadurski@gmail.com</td>
+              <td><a href="https://github.com/K0rchard" class="github">https://github.com/K0rchard</td>
+              </tr>
+              <tr class="table-active">
+              <th scope="row">Maja</th>
+              <td><a href="mailto: majagrys@wp.pl" class="e-mail">majagrys@wp.pl</td>
+              <td><a href="https://github.com/MajaGrys" class="github">https://github.com/MajaGrys</td>
+              </tr>
+          </tbody>
+      </table>
+    </div>
+   </div>
+   <footer>&#169; Some rights reserved.</footer> 
+   <script src="../js/script.js"></script>
+</body>
+</html>

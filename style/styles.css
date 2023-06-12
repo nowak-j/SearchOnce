@@ -1,0 +1,329 @@
+/* #region GLOBAL ============================= */
+
+body {
+    background-color: rgba(236, 237, 241, 1);
+    background-image: radial-gradient(circle, rgba(236, 237, 241, 1) 10%, rgba(201, 207, 230, 1) 90%);
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+article {
+
+    text-align: center !important;
+    flex: 1;
+}
+
+footer {
+    min-height: 6.43vh;
+    background: #F4F6F6;
+    text-align: center;
+    padding-top: 1.3vh;
+    margin-top: auto;
+    background: rgba(44, 62, 80, 1);
+    color: white;
+}
+
+.alert {
+    --bs-alert-margin-bottom: 0;
+}
+
+li {
+    list-style-type: none;
+    padding-top: 0.6vw;
+}
+
+.dark {
+    color: white;
+    background-color: rgb(25, 37, 49);
+}
+
+.underNav {
+    padding: 4%;
+    min-height: 80vh;
+}
+
+a {
+    color: #18bc9c;
+}
+
+a:hover {
+    color: #f39c12 !important;
+}
+
+nav li:hover {
+    cursor: pointer;
+}
+
+#logo {
+    max-height: 8vh;
+    border-radius: 50%;
+}
+
+.darkmode_button.toDark {
+    background:rgba(12, 16, 34, 1);
+    border-radius: 10%;
+}
+
+.darkmode_button.toLight {
+    background: rgba(237, 238, 242, 1);
+    border-radius: 10%;
+}
+
+.fa-moon.lightmode {
+    color: rgba(237, 238, 242, 1);
+}
+
+.fa-moon.darkmode {
+    color: rgba(12, 16, 34, 1);
+}
+
+#wotd_container a {
+    display: block;
+}
+
+#wotd_container a:hover {
+    color: #2c3e50 !important;
+}
+
+#wotd_container h5 {
+    color: #808080;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+#wotd_container p {
+    font:'AmstelvarAlpha', sans-serif;
+    font-style: oblique 23deg;
+  }
+
+.alert-heading {
+    text-align: center; 
+    color: #2c3e50; 
+    font-weight: bold;
+}
+
+/* #endregion GLOBAL ========================== */
+/* #region MAIN ==============================*/
+
+#instruction {
+    padding-top: 10vh;
+    padding-bottom: 6vh;
+}
+
+#dictionaries {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 2.6vh;
+    text-align: center;
+    min-width: fit-content !important;
+
+}
+
+#toggleLogosButton {
+    margin-bottom: 2vw;
+    font-variant: small-caps;
+}
+
+#dictionaries button {
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+.greyscale {
+    filter: grayscale(100%);
+}
+
+#results {
+    padding-right: 5vw;
+    text-align: justify;
+}
+
+#results_ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#Meriam-Webster-output,
+#Wiktionary-output,
+#Urban-output{
+    max-width: 33% ;
+    align-items: center;
+}
+
+#Wiktionary-output{
+    margin-left: 4vh;
+    margin-right: 4vh;
+}
+
+#results h6 {
+
+    text-align: center;
+    padding: 2vw;
+    font-size: 1.3rem;
+    color: darkorange;
+    letter-spacing: 0.6vw;
+}
+
+h1 {
+    letter-spacing: 0.1vw;
+}
+
+.hidden {
+    display: none;
+}
+
+.custom-tooltip {
+    --bs-tooltip-bg: var(--bs-primary) !important;
+    --bs-tooltip-opacity: 5 !important;
+    --bs-tooltip-border-radius: 3% !important;
+    --bs-tooltip-color: whitesmoke !important;
+  }
+
+#btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+}
+
+.form-check {
+    padding-left: 0;
+}
+
+#instruction h5 {
+    padding-top: 1vh;
+}
+
+/* #endregion MAIN ===========================*/
+/* #region DICTIONARIES ==============================*/
+#dict-description {
+    margin: auto;
+    max-width: 1000px;
+}
+
+#dict-img {
+    max-width: 120px;
+    padding: 10wv;
+}
+
+#dictionariesBody .col-md-10 {
+    padding-top: 1%;
+    padding-right: 5% !important;
+    padding-left: 5% !important;
+    text-align: justify !important;
+}
+
+.my-2 {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+@media only screen and (max-width: 600px)  {
+    .form-control {
+        min-width: 70% !important;
+    }
+}
+
+/* #endregion DICTIONARIES ===========================*/
+/* #region ABOUT THE PROJECT and CONTACT ===========================*/
+#aboutTheProject {
+    padding: 1% 10%;
+    text-align: justify;
+}
+
+#bookDiv {
+    text-align: center;
+}
+
+#book {
+    width: 45%;
+    justify-content: center;
+    border-radius: 2%;
+    box-shadow: 0 0 5px 5px whitesmoke;
+}
+
+#contact, #about {
+    text-align: center;
+}
+
+.table {
+    width: 70%;
+    justify-content: center;
+    table-layout: fixed;
+    text-align: center;
+}
+
+.table-primary {
+    --bs-table-color: #000;
+    --bs-table-hover-color: #000;
+}
+
+.table-secondary {
+    --bs-table-bg: #d7dbdc;
+    --bs-table-color: #000;
+    --bs-table-hover-color: #000;
+    --bs-table-hover-bg: #ecf0f1;
+}
+
+td {
+    word-wrap: break-word;
+}
+
+/* #endregion ABOUT THE PROJECT and CONTACT ===========================*/
+/* #region MEDIA  ===========================*/
+
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        scroll-behavior: smooth;
+    }
+}
+
+/* @media screen and (max-width: 1200px) {
+
+    body {
+        font-size: 1.2em;
+    }
+
+} */
+
+@media screen and (max-width: 768px) {
+    #results_ul {
+        flex-direction: column;
+    }
+
+    #Meriam-Webster-output,
+    #Wiktionary-output,
+    #Urban-output{
+        max-width: 100%;
+    }
+
+    #Wiktionary-output {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #Urban-output {
+        margin-left: -40px;
+        max-width: 120%;
+    }
+
+    /* body {
+        font-size: 1.2em;
+    } */
+}
+
+/* @media screen and (max-width: 480px) {
+
+    body {
+        font-size: 1em;
+    }
+} */
+
+/* #endregion MEDIA */

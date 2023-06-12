@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>SearchOnce</title>
+  <link rel="icon" type="image/x-icon" href="./assets/img/favicon.png">
+  <link href="../style/styles.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+    integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootswatch@5.2.3/dist/flatly/bootstrap.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body id="dictionariesBody">
+  <!--Navigation bar-->
+  <div id="nav-placeholder"></div>
+  <script>
+    $(function () {
+      $("#nav-placeholder").load("../nav.html");
+    });
+  </script>
+  <!--end of Navigation bar-->
+  <div class="underNav">
+    <div class="card border-primary mb-3" id="dict-description">
+      <div class="card-header">Merriam-Webster Dictionary</div>
+      <div class="card-body">
+        <div class="row">
+          <div class="col-md-2">
+            <p class="card-text"> <img src="../assets/img/Meriam-Webster-logo.png" alt="Meriam-Webster" id="dict-img">
+          </div>
+          <div class="col-md-10">
+            <div> Merriam-Webster, America's leading lexicographic publisher, was founded in 1831 by George and
+              Charles Merriam and is considered the oldest publishing house in the United States. 
+              <a href="https://www.merriam-webster.com/">The website</a> was launched in 1996 and has been regularly
+              updated since then, providing an extensive record of American language.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="card border-primary mb-3" id="dict-description">
+      <div class="card-header">Collins Dictionary</div>
+      <div class="card-body">
+        <div class="row">
+          <div class="col-md-2">
+            <p class="card-text"><img src="../assets/img/Collins-logo.png" alt="Collins" id="dict-img">
+          </div>
+          <div class="col-md-10">
+            <div>The beginning of Collins Dictionary is marked by the publication of <em>Donnegan’s Greek and English
+                Lexicon</em> in 1824. <a href="https://www.collinsdictionary.com/">The online version</a> became
+              available
+              to the public in 2007. Submissions from the public allow the publisher to provide up-to-date
+              information,
+              including contemporary slang and newly coined terms.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <div class="card border-primary mb-3" id="dict-description">
+      <div class="card-header">Wiktionary</div>
+      <div class="card-body">
+        <div class="row">
+          <div class="col-md-2">
+            <p class="card-text"><img src="../assets/img/Wiktionary-logo.png" alt="Wiktionary" id="dict-img">
+          </div>
+          <div class="col-md-10">
+            <div><a href="https://www.wiktionary.org/">Wiktionary</a> is a collaborative web-based project that
+              started in 2002. The main objective of the project is to create a free multilingual dictionary. All entries in
+              Wiktionary are contributions submitted by volunteers.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card border-primary mb-3" id="dict-description">
+      <div class="card-header">Urban Dictionary</div>
+      <div class="card-body">
+        <div class="row">
+          <div class="col-md-2">
+            <p class="card-text"><img src="../assets/img/Urban_Dictionary_logo.png" alt="Urban" id="dict-img">
+          </div>
+          <div class="col-md-10">
+            <div><a href="https://www.urbandictionary.com/">Urban Dictionary</a> is an online dictionary for
+              English slang initiated in 1999 by Aaron Peckham. The project is crowdsourced, reaching approximately 2000 new
+              entries everyday. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>&#169; Some rights reserved.</footer>
+  <script src="../js/script.js"></script>
+</body>
+
+</html>
